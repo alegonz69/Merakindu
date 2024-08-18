@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap");
 * {
   margin: 0;
@@ -13,7 +14,7 @@ body .custom-navbar {
   background-color: #f4b5f6;
 }
 body .custom-navbar .container-fluid {
-  padding-bottom: 5px;
+  width: 100%;
 }
 body .custom-navbar .container-fluid img {
   width: 15%;
@@ -36,12 +37,13 @@ body .custom-navbar .container-fluid .custom-offcanvas {
 body .custom-navbar .container-fluid .navbar-toggler {
   padding: 0.5px;
 }
-body article {
+body nav {
   width: 100%;
   display: flex;
   background-color: #e0d0e8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-body article .boton-home {
+body nav .boton-home {
   color: rgb(169, 155, 155);
   width: 33%;
   display: flex;
@@ -50,17 +52,17 @@ body article .boton-home {
   justify-content: center;
   text-decoration: none;
 }
-body article .boton-home i {
+body nav .boton-home i {
   margin-bottom: 10px;
   margin-top: 16px;
 }
-body article .boton-home h3 {
+body nav .boton-home h3 {
   margin: 0;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
 }
-body article .boton-compra {
+body nav .boton-compra {
   color: rgb(169, 155, 155);
   width: 33%;
   display: flex;
@@ -69,17 +71,17 @@ body article .boton-compra {
   justify-content: center;
   text-decoration: none;
 }
-body article .boton-compra i {
+body nav .boton-compra i {
   margin-bottom: 10px;
   margin-top: 16px;
 }
-body article .boton-compra h3 {
+body nav .boton-compra h3 {
   margin: 0;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
 }
-body article .boton-desplegable {
+body nav .boton-desplegable {
   color: rgb(169, 155, 155);
   width: 33%;
   display: flex;
@@ -89,19 +91,57 @@ body article .boton-desplegable {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-body article .boton-desplegable button {
+body nav .boton-desplegable button {
   padding: 0;
 }
-body article .boton-desplegable button i {
+body nav .boton-desplegable button i {
   color: rgb(169, 155, 155);
 }
-body article .boton-desplegable h3 {
+body nav .boton-desplegable h3 {
   font-size: 16px;
   margin: 0;
   font-weight: bold;
 }
 body main {
-  background-color: #e0d0e8;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #e0d0f1, #c0afc8, #9f8fa0, #7e717c, #5d545a);
+}
+body main h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5d4f63;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  padding: 15px;
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+body main .highlighted-text {
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: #f3f3f4;
+  /* Ajusta el margen según sea necesario */
+}
+body main .highlighted-text::before, body main .highlighted-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  /* Grosor de la línea */
+  background-color: #373232;
+  /* Color de la línea */
+}
+body main .highlighted-text::before {
+  left: 0;
+  transform: translateY(-50%);
+}
+body main .highlighted-text::after {
+  right: 0;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=estilos.css.map */

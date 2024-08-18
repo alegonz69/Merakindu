@@ -1,11 +1,13 @@
 body {
     background-color: rgb(218, 223, 227);
+
+    // height: 100vh;
     .custom-navbar {
         background-color: #f4b5f6;
 
         .container-fluid {
+            width: 100%;
 
-            padding-bottom: 5px;
             // width: 90%; hacer esto en desktop
             img {
                 width: 15%;
@@ -19,6 +21,7 @@ body {
                 color: rgb(169, 155, 155);
                 margin: 0;
                 text-shadow: 0.5 4px 8px rgba(65, 63, 63, 0.7);
+
                 img {
                     width: 25%;
                 }
@@ -33,11 +36,12 @@ body {
             }
         }
     }
-    article {
+
+    nav {
         width: 100%;
         display: flex;
         background-color: #e0d0e8;
-        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
         .boton-home {
             color: rgb(169, 155, 155);
@@ -92,12 +96,15 @@ body {
             justify-content: center;
             margin-bottom: 20px;
             margin-top: 20px;
+
             button {
                 padding: 0;
+
                 i {
                     color: rgb(169, 155, 155);
                 }
             }
+
             h3 {
                 font-size: 16px;
                 margin: 0;
@@ -105,7 +112,54 @@ body {
             }
         }
     }
+
     main {
-        background-color: #e0d0e8;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, #e0d0f1, #c0afc8, #9f8fa0, #7e717c, #5d545a);
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #5d4f63;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 1px solid white;
+        }
+
+        .highlighted-text {
+            position: relative;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 2rem 0;
+            color:#f3f3f4 ;
+
+            /* Ajusta el margen según sea necesario */
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 30%;
+                height: 1px;
+                /* Grosor de la línea */
+                background-color: #373232;
+                /* Color de la línea */
+            }
+            &::before {
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &::after {
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
     }
 }

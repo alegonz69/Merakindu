@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar custom-navbar">
+  <header class="navbar custom-navbar">
     <div class="container-fluid .custom-flex-container ">
       <img src="assets/icons/LogoMeraki.png" alt="Logo De Meraki">
       <a class="navbar-brand " href="#">Tienda Online</a>
@@ -55,47 +55,50 @@
         </div>
       </div>
     </div>
-    <article>
-      <a href="#" class="boton-home">
-        <i class="fa-solid fa-house fa-lg"></i>
-        <h3>HOME</h3>
-      </a>
-      <div class="boton-desplegable">
+  </header>
+  <nav>
+    <a href="#" class="boton-home">
+      <i class="fa-solid fa-house fa-lg"></i>
+      <h3>HOME</h3>
+    </a>
+    <div class="boton-desplegable">
 
-        <button class="btn mobile-categories-btn btn-lg" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#categoriesMenu" aria-controls="categoriesMenu">
-          <i class="fa-solid fa-list"></i>
-        </button>
+      <button class="btn mobile-categories-btn btn-lg" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#categoriesMenu" aria-controls="categoriesMenu">
+        <i class="fa-solid fa-list"></i>
+      </button>
 
-        <h3>CATEGORIAS</h3>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="categoriesMenu" aria-labelledby="categoriesMenuLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="categoriesMenuLabel">Categorías</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="list-group">
-              <li class="list-group-item"><a href="#">Categoría 1</a></li>
-              <li class="list-group-item"><a href="#">Categoría 2</a></li>
-              <li class="list-group-item"><a href="#">Categoría 3</a></li>
-              <li class="list-group-item"><a href="#">Categoría 4</a></li>
-              <li class="list-group-item"><a href="#">Categoría 5</a></li>
-            </ul>
-          </div>
+      <h3>CATEGORIAS</h3>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="categoriesMenu" aria-labelledby="categoriesMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="categoriesMenuLabel">Categorías</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">Categoría 1</a></li>
+            <li class="list-group-item"><a href="#">Categoría 2</a></li>
+            <li class="list-group-item"><a href="#">Categoría 3</a></li>
+            <li class="list-group-item"><a href="#">Categoría 4</a></li>
+            <li class="list-group-item"><a href="#">Categoría 5</a></li>
+          </ul>
         </div>
       </div>
-      <a href="#" class="boton-compra">
-        <i class="fa-brands fa-shopify fa-lg"></i>
-        <h3>COMPRA</h3>
-      </a>
-    </article>
+    </div>
+    <a href="#" class="boton-compra">
+      <i class="fa-brands fa-shopify fa-lg"></i>
+      <h3>COMPRA</h3>
+    </a>
   </nav>
   <main>
-        <h1>
-          MERAKI INDUMENTARIA
-        </h1>
+    <h1>
+      MERAKI 
+      <span>INDUMENTARIA</span>
+    </h1>
+    <h2 class="highlighted-text">
+      DESTACADOS
+    </h2>
   </main>
-
   <footer>
     ESTO ES UN FOOTER
   </footer>
