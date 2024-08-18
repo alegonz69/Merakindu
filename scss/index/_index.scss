@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(218, 223, 227);
+    .custom-navbar {
+        background-color: #f4b5f6;
+
+        .container-fluid {
+
+            padding-bottom: 5px;
+            // width: 90%; hacer esto en desktop
+            img {
+                width: 15%;
+            }
+
+            .navbar-brand {
+                width: 70%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(169, 155, 155);
+                margin: 0;
+                text-shadow: 0.5 4px 8px rgba(65, 63, 63, 0.7);
+                img {
+                    width: 25%;
+                }
+            }
+
+            .custom-offcanvas {
+                background-color: #c5a1d6;
+            }
+
+            .navbar-toggler {
+                padding: 0.5px;
+            }
+        }
+    }
+    article {
+        width: 100%;
+        display: flex;
+        background-color: #e0d0e8;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        .boton-home {
+            color: rgb(169, 155, 155);
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            i {
+                margin-bottom: 10px;
+                margin-top: 16px;
+            }
+
+            h3 {
+                margin: 0;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .boton-compra {
+            color: rgb(169, 155, 155);
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            i {
+                margin-bottom: 10px;
+                margin-top: 16px;
+            }
+
+            h3 {
+                margin: 0;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .boton-desplegable {
+            color: rgb(169, 155, 155);
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            button {
+                padding: 0;
+                i {
+                    color: rgb(169, 155, 155);
+                }
+            }
+            h3 {
+                font-size: 16px;
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+    }
+    main {
+        background-color: #e0d0e8;
+    }
+}
